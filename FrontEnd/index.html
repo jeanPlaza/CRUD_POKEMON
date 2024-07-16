@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon CRUD</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Pokémon CRUD</h1>
+        
+        <form id="createForm" class="mb-4">
+            <div class="form-row">
+                <div class="col">
+                    <input type="text" id="nombre" class="form-control" placeholder="Nombre" required>
+                </div>
+                <div class="col">
+                    <input type="text" id="tipo1" class="form-control" placeholder="Tipo 1" required>
+                </div>
+                <div class="col">
+                    <input type="text" id="tipo2" class="form-control" placeholder="Tipo 2">
+                </div>
+                <div class="col">
+                    <input type="text" id="region" class="form-control" placeholder="Región" required>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary">Crear Pokémon</button>
+                </div>
+            </div>
+        </form>
+        
+        <ul id="pokemonList" class="list-group">
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
